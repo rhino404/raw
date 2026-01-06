@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a7c5c"/>
+      <stop offset="100%" style="stop-color:#2d5a3d"/>
+    </linearGradient>
+  </defs>
+  <!-- Leaf / Wing shape representing both roots and wings -->
+  <circle cx="50" cy="50" r="45" fill="url(#leafGrad)"/>
+  <!-- Stylized leaf/feather -->
+  <path d="M50 20 C35 35, 30 55, 50 80 C70 55, 65 35, 50 20" fill="#fff" opacity="0.9"/>
+  <!-- Center vein / stem -->
+  <path d="M50 25 L50 75" stroke="#2d5a3d" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Small root lines at bottom -->
+  <path d="M50 75 L42 85 M50 75 L50 88 M50 75 L58 85" stroke="#fff" stroke-width="2" fill="none" opacity="0.7"/>
+</svg>

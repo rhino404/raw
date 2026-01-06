@@ -1,0 +1,7 @@
+# robots.txt for rootsandwingswnc.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://rootsandwingswnc.com/sitemap.xml
