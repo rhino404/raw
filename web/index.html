@@ -66,17 +66,17 @@
 
     <main id="main">
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero" id="hero-section">
             <div class="container hero-content">
-                <h1 class="hero-title">Discover Adventure.<br>Grow in Faith.<br>Explore Together.</h1>
-                <p class="hero-subtitle">Outdoor experiences for kids and families in the heart of Western North
+                <h1 class="hero-title" id="hero-title">Discover Adventure.<br>Grow in Faith.<br>Explore Together.</h1>
+                <p class="hero-subtitle" id="hero-subtitle">Outdoor experiences for kids and families in the heart of Western North
                     Carolina.</p>
-                <div class="hero-cta">
+                <div class="hero-cta" id="hero-cta">
                     <a href="#subscribe" class="btn btn-primary">Join Our Community</a>
                     <a href="#about" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
-            <div class="hero-bg"></div>
+            <div class="hero-bg" id="hero-bg"></div>
         </section>
 
         <!-- About Section -->
@@ -192,9 +192,8 @@
         <!-- Subscribe Section -->
         <section id="subscribe" class="subscribe section section-alt">
             <div class="container">
-                <h2 class="section-title">Stay Connected</h2>
-                <p class="section-subtitle">Join our newsletter for updates on upcoming adventures, events, and
-                    community news.</p>
+                <h2 class="section-title">Let's Stay Connected</h2>
+                <p class="section-subtitle">Join our newsletter for updates on upcoming sessions, events, and, more!</p>
 
                 <div class="subscribe-form-wrapper">
                     <!-- Placeholder form (replace with Mailchimp embed) -->
@@ -772,6 +771,89 @@
                         history.pushState(null, null, href);
                     }
                 });
+            });
+        })();
+    </script>
+
+    <!-- Dynamic Hero Banner Script -->
+    <script>
+        (function() {
+            async function loadHeroBanners() {
+                try {
+                    const response = await fetch('hero_banners.json');
+                    const data = await response.json();
+                    return data.hero_banners;
+                } catch (error) {
+                    console.error('Failed to load hero banners:', error);
+                    return [];
+                }
+            }
+
+            function updateHeroBanner(banners) {
+                const now = new Date();
+                now.setHours(0, 0, 0, 0); // Compare dates at midnight
+                
+                // Find active banner based on current date
+                const activeBanner = banners.find(banner => {
+                    const launchDate = new Date(banner.launch_date);
+                    const endDate = new Date(banner.end_launch_date);
+                    launchDate.setHours(0, 0, 0, 0);
+                    endDate.setHours(23, 59, 59, 999);
+                    
+                    return now >= launchDate && now <= endDate;
+                });
+
+                // If no active banner found, keep default content
+                if (!activeBanner) {
+                    console.log('No active banner for current date, using default content');
+                    return;
+                }
+
+                // Update the DOM with active banner content
+                const titleEl = document.getElementById('hero-title');
+                const subtitleEl = document.getElementById('hero-subtitle');
+                const ctaEl = document.getElementById('hero-cta');
+                const heroSection = document.getElementById('hero-section');
+
+                if (titleEl) {
+                    titleEl.innerHTML = `${activeBanner.title}<br>${activeBanner.subtitle}`;
+                }
+                
+                if (subtitleEl) {
+                    subtitleEl.textContent = 'Outdoor experiences for kids and families in the heart of Western North Carolina.';
+                }
+                
+                if (ctaEl) {
+                    ctaEl.innerHTML = `
+                        <a href="${activeBanner.cta_url}" class="btn btn-primary">${activeBanner.cta_text}</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    `;
+                }
+
+                // Apply seasonal texture class
+                if (heroSection) {
+                    // Remove any existing seasonal classes
+                    heroSection.classList.remove('hero-spring', 'hero-summer', 'hero-fall');
+                    
+                    // Add seasonal class based on banner title
+                    const season = activeBanner.title.toLowerCase();
+                    if (season.includes('spring')) {
+                        heroSection.classList.add('hero-spring');
+                    } else if (season.includes('summer')) {
+                        heroSection.classList.add('hero-summer');
+                    } else if (season.includes('fall')) {
+                        heroSection.classList.add('hero-fall');
+                    }
+                }
+
+                console.log(`Active hero banner: ${activeBanner.title} (ID: ${activeBanner.id})`);
+            }
+
+            // Load and apply hero banner on page load
+            loadHeroBanners().then(banners => {
+                if (banners.length > 0) {
+                    updateHeroBanner(banners);
+                }
             });
         })();
     </script>
