@@ -1,0 +1,9 @@
+{
+    "enabled": true,
+    "message": "Spring Session — limited spots available!",
+    "spots_remaining": null,
+    "cta_text": "Register Now",
+    "cta_url": "https://forms.gle/XASZtrgfo9UsQoGt5",
+    "start": "2026-02-01T00:00:00-05:00",
+    "end": "2026-03-24T23:59:59-04:00"
+}

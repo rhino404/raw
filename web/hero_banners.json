@@ -4,8 +4,8 @@
             "id": 1,
             "title": "Spring Session",
             "subtitle": "Begins March 25th",
-            "cta_text": "Get Connected",
-            "cta_url": "/#subscribe",
+            "cta_text": "Register Now",
+            "cta_url": "https://forms.gle/XASZtrgfo9UsQoGt5",
             "launch_date": "2026-01-01",
             "end_launch_date": "2026-03-24"
         },
@@ -13,8 +13,8 @@
             "id": 2,
             "title": "Summer Session",
             "subtitle": "Begins July 15th",
-            "cta_text": "Get Connected",
-            "cta_url": "/#subscribe",
+            "cta_text": "Register Now",
+            "cta_url": "https://forms.gle/XASZtrgfo9UsQoGt5",
             "launch_date": "2026-05-01",
             "end_launch_date": "2026-07-14"
         },
@@ -22,8 +22,8 @@
             "id": 3,
             "title": "Fall Session",
             "subtitle": "Begins October 21st",
-            "cta_text": "Get Connected",
-            "cta_url": "/#subscribe",
+            "cta_text": "Register Now",
+            "cta_url": "https://forms.gle/XASZtrgfo9UsQoGt5",
             "launch_date": "2026-08-01",
             "end_launch_date": "2026-10-20"
         }
