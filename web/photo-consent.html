@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo and Media Consent — Roots and Wings WNC">
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Photo &amp; Media Consent — Roots and Wings WNC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="policy-page">
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text">Roots &amp; Wings <span class="logo-wnc">WNC</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#subscribe">Connect</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main" class="policy-main">
+        <article class="container policy-container">
+            <h1 class="policy-title">Photo &amp; Media Consent</h1>
+            <p class="policy-meta">Effective Date: March 23, 2026 &nbsp;|&nbsp; Roots and Wings WNC</p>
+
+            <section class="policy-section">
+                <h2>1. Purpose</h2>
+                <p>Roots and Wings WNC may photograph or video-record activities during Program sessions for the purpose of sharing our mission, promoting the Program, and keeping families connected. This document explains how images and media may be used and your right to opt out.</p>
+            </section>
+
+            <section class="policy-section">
+                <h2>2. How Photos &amp; Media May Be Used</h2>
+                <p>With your consent, photos and videos of your child(ren) taken during Program activities may appear in:</p>
+                <ul>
+                    <li>The Roots and Wings WNC website (<a href="https://rootsandwingswnc.com">rootsandwingswnc.com</a>)</li>
+                    <li>Official Roots and Wings WNC social media accounts (Instagram, Facebook)</li>
+                    <li>Email newsletters sent via Mailchimp</li>
+                    <li>Printed materials for community outreach or events</li>
+                </ul>
+                <p>Photos and videos will only be used to represent the Program in a positive, respectful manner. Children&rsquo;s full names will <strong>never</strong> be published alongside their photos without separate, explicit permission.</p>
+                <p>If photos or videos are posted to third-party platforms such as Instagram or Facebook, those platforms have their own terms, storage practices, and sharing tools. Roots and Wings WNC does not control how third parties may copy, cache, share, or further distribute content once posted there.</p>
+            </section>
+
+            <section class="policy-section">
+                <h2>3. This Consent Is Optional</h2>
+                <p>Photo and media consent is <strong>entirely optional</strong> and is not a condition of participation in the Program. Your child may fully participate regardless of whether you grant or decline this consent.</p>
+            </section>
+
+            <section class="policy-section">
+                <h2>4. How to Grant or Decline Consent</h2>
+                <p>During registration, you will be asked a yes/no question about photo and media consent. You may:</p>
+                <ul>
+                    <li><strong>Grant consent:</strong> Select &ldquo;Yes&rdquo; to allow photos/videos of your child(ren) to be used as described above.</li>
+                    <li><strong>Decline consent:</strong> Select &ldquo;No&rdquo; and Roots and Wings WNC will not intentionally photograph or publish images focused on your child(ren). Because this is a group setting, incidental background inclusion may still occur, but any identified image will be removed promptly after notice.</li>
+                </ul>
+            </section>
+
+            <section class="policy-section">
+                <h2>5. Withdrawing Consent</h2>
+                <p>You may withdraw your consent at any time by contacting us at <a href="mailto:rootsandwingswnc@gmail.com">rootsandwingswnc@gmail.com</a>. Upon receiving your request:</p>
+                <ul>
+                    <li>We will remove any identified photos/videos of your child(ren) from our website and official social media accounts within a reasonable timeframe after receiving enough information to identify the content.</li>
+                    <li>We cannot guarantee removal of photos already shared, downloaded, or cached by third parties.</li>
+                </ul>
+            </section>
+
+            <section class="policy-section">
+                <h2>6. No Compensation</h2>
+                <p>No compensation is provided for the use of photos or videos under this consent. All media is used solely for non-commercial, mission-related purposes of Roots and Wings WNC.</p>
+            </section>
+
+            <section class="policy-section">
+                <h2>7. Acknowledgment</h2>
+                <p>By answering the photo consent question on the Roots and Wings WNC registration form, I confirm that I have read and understood this Photo &amp; Media Consent policy. I understand that this consent is optional and can be withdrawn at any time.</p>
+            </section>
+
+            <div class="policy-contact">
+                <p><strong>Questions?</strong> Contact us at <a href="mailto:rootsandwingswnc@gmail.com">rootsandwingswnc@gmail.com</a></p>
+            </div>
+
+            <nav class="policy-nav" aria-label="Related policies">
+                <h3>Related Policies</h3>
+                <ul>
+                    <li><a href="liability-waiver.html">Liability Waiver &amp; Assumption of Risk</a></li>
+                    <li><a href="payment-policy.html">Payment Policy</a></li>
+                    <li><a href="medical-authorization.html">Medical &amp; Emergency Authorization</a></li>
+                </ul>
+                <p><a href="index.html">&larr; Back to Home</a></p>
+            </nav>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">🌿</span>
+                <span>Roots &amp; Wings WNC</span>
+            </div>
+            <p class="footer-copy">&copy; 2026 Roots and Wings WNC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Nav Script -->
+    <script>
+        (function () {
+            const toggle = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('.nav');
+            if (!toggle || !nav) return;
+            toggle.addEventListener('click', function () {
+                const expanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !expanded);
+                nav.classList.toggle('nav-open');
+            });
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    toggle.setAttribute('aria-expanded', 'false');
+                    nav.classList.remove('nav-open');
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>

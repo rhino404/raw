@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Payment Policy — Roots and Wings WNC">
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Payment Policy — Roots and Wings WNC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="policy-page">
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text">Roots &amp; Wings <span class="logo-wnc">WNC</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#subscribe">Connect</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main" class="policy-main">
+        <article class="container policy-container">
+            <h1 class="policy-title">Payment Policy</h1>
+            <p class="policy-meta">Effective Date: March 23, 2026 &nbsp;|&nbsp; Roots and Wings WNC</p>
+
+            <section class="policy-section">
+                <h2>1. Session Fee</h2>
+                <p>The program fee is <strong>$80 per family</strong> for one full block of <strong>8 sessions</strong>, which is equivalent to <strong>$10 per family per class</strong>. This fee covers all supplies for fine motor crafts and activities provided during the session block.</p>
+                <p>The session fee reserves one family spot for the full 8-session block. The fee is not reduced because of family absences, partial attendance, or voluntary withdrawal after the session block begins.</p>
+            </section>
+
+            <section class="policy-section">
+                <h2>2. Payment Method</h2>
+                <p>Payment is accepted <strong>via Venmo only</strong>. Please send payment to:</p>
+                <div class="policy-callout">
+                    <p><strong>Venmo:</strong> <a href="https://venmo.com/rootsandwingswnc">@rootsandwingswnc</a></p>
+                    <p>Include your family name and &ldquo;Spring 2026&rdquo; (or current session name) in the Venmo note.</p>
+                </div>
+            </section>
+
+            <section class="policy-section">
+                <h2>3. When Payment Is Due</h2>
+                <p>Payment is due <strong>within 7 days of completing registration</strong> via the Google Form. Your family&rsquo;s spot is reserved once payment is received. If payment is not received within the 7-day window, your spot may be offered to families on the waitlist.</p>
+            </section>
+
+            <section class="policy-section">
+                <h2>4. Refunds &amp; Cancellations</h2>
+                <ul>
+                    <li><strong>Full refund:</strong> Available if you cancel <strong>before the first session</strong> of the current period.</li>
+                    <li><strong>No mid-session refund:</strong> Once the first session in the 8-session block has begun, no full or partial refund is issued for voluntary withdrawal, missed dates, schedule conflicts, or partial attendance.</li>
+                    <li><strong>No per-class credit:</strong> Missed individual sessions are not refundable and do not reduce the total session fee.</li>
+                </ul>
+            </section>
+
+            <section class="policy-section">
+                <h2>5. Weather Cancellations</h2>
+                <p>The program runs <strong>rain or shine</strong>. In the event of severe weather (thunderstorms, extreme cold, or other unsafe conditions), the session may be cancelled by Program leaders. If a session is cancelled due to weather:</p>
+                <ul>
+                    <li>Families will be notified by <strong>8:00 AM</strong> on the morning of the session via email or the group communication channel.</li>
+                    <li>Cancelled sessions due to weather will be <strong>rescheduled so that the full 8-session block is still delivered</strong>. Make-up dates may be added at the end of the session period or on another announced date.</li>
+                    <li>Because the session fee is for a full 8-session block, there is no per-session reduction or refund for weather cancellations when the cancelled session is rescheduled as part of that block.</li>
+                </ul>
+            </section>
+
+            <section class="policy-section">
+                <h2>6. Financial Flexibility</h2>
+                <p>We remain flexible for families who need financial accommodation. If the full session fee presents a hardship, please reach out to us directly at <a href="mailto:rootsandwingswnc@gmail.com">rootsandwingswnc@gmail.com</a> before the session begins to discuss your situation. Any reduced-rate arrangement or payment plan must be agreed in writing before the first session.</p>
+            </section>
+
+            <section class="policy-section">
+                <h2>7. Acknowledgment</h2>
+                <p>By completing the Roots and Wings WNC registration form, I confirm that I have read, understood, and agree to this Payment Policy. I understand that payment is required via Venmo and that my family&rsquo;s registration is not complete until payment is received.</p>
+            </section>
+
+            <div class="policy-contact">
+                <p><strong>Questions?</strong> Contact us at <a href="mailto:rootsandwingswnc@gmail.com">rootsandwingswnc@gmail.com</a></p>
+            </div>
+
+            <nav class="policy-nav" aria-label="Related policies">
+                <h3>Related Policies</h3>
+                <ul>
+                    <li><a href="liability-waiver.html">Liability Waiver &amp; Assumption of Risk</a></li>
+                    <li><a href="medical-authorization.html">Medical &amp; Emergency Authorization</a></li>
+                    <li><a href="photo-consent.html">Photo &amp; Media Consent</a></li>
+                </ul>
+                <p><a href="index.html">&larr; Back to Home</a></p>
+            </nav>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">🌿</span>
+                <span>Roots &amp; Wings WNC</span>
+            </div>
+            <p class="footer-copy">&copy; 2026 Roots and Wings WNC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Nav Script -->
+    <script>
+        (function () {
+            const toggle = document.querySelector('.nav-toggle');
+            const nav = document.querySelector('.nav');
+            if (!toggle || !nav) return;
+            toggle.addEventListener('click', function () {
+                const expanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !expanded);
+                nav.classList.toggle('nav-open');
+            });
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    toggle.setAttribute('aria-expanded', 'false');
+                    nav.classList.remove('nav-open');
+                });
+            });
+        })();
+    </script>
+</body>
+
+</html>

@@ -11,13 +11,12 @@ A lightweight, one-page static website for **Roots and Wings WNC** — an outdoo
 
 Single-page design with anchor navigation:
 
-| Section      | Anchor        | Purpose                                      |
-|--------------|---------------|----------------------------------------------|
-| Hero         | `#`           | Welcome message + primary CTA                |
-| About        | `#about`      | Mission, values, what we do                  |
-| FAQ          | `#faq`        | Common questions and answers                 |
-| Contact      | `#contact`    | Email CTA                                    |
-| Subscribe    | `#subscribe`  | Mailchimp embedded signup form               |
+| Section | Anchor       | Purpose                                        |
+|---------|--------------|------------------------------------------------|
+| Hero    | `#`          | Welcome message + primary CTA                  |
+| About   | `#about`     | Mission, values, what we do                    |
+| FAQ     | `#faq`       | Common questions and answers                   |
+| Connect | `#subscribe` | Contact info, social links & newsletter signup |
 
 ---
 
@@ -48,6 +47,8 @@ Then open [http://localhost:8000](http://localhost:8000)
 4. Enable **Double opt-in** under Audience settings
 5. Copy the generated embed code
 6. Replace the placeholder in `web/index.html` inside the `#subscribe` section
+
+> **Note:** The Mailchimp embed has been trimmed to the minimal required markup (form fields, honeypot, response containers, `mc-validate.js`, and field name registration). All SMS/country-code logic has been removed. Site-owned CSS overrides style the form to match the design system, and a lightweight script handles loading states, double-submit prevention, and auto-dismissing success messages.
 
 ---
 
@@ -99,12 +100,16 @@ The repository includes a GitHub Actions workflow (`.github/workflows/deploy.yml
 
 ```text
 web/
-├── index.html        # One-page site with all sections
-├── styles.css        # Modern responsive styles
-├── robots.txt        # Search engine directives
-├── sitemap.xml       # SEO sitemap
-├── CNAME             # GitHub Pages custom domain
-└── favicon.svg       # Site icon
+├── index.html                # One-page site with all sections
+├── styles.css                # Modern responsive styles
+├── liability-waiver.html     # Liability waiver & assumption of risk
+├── payment-policy.html       # Payment policy (Venmo, fees, refunds)
+├── medical-authorization.html # Medical & emergency authorization
+├── photo-consent.html        # Photo & media consent (optional)
+├── robots.txt                # Search engine directives
+├── sitemap.xml               # SEO sitemap
+├── CNAME                     # GitHub Pages custom domain
+└── favicon.svg               # Site icon
 ```
 
 ---
@@ -112,6 +117,25 @@ web/
 ## Privacy Note (Subscribe Section)
 
 Minimal privacy copy included near the form:
+
+> "Your email is used to send updates via Mailchimp. You can unsubscribe anytime."
+
+---
+
+## Registration & Policies
+
+Registration is handled through a Google Form. During registration, parents/guardians review and acknowledge four site-hosted policy documents:
+
+| Document                     | Page                        | Required?       |
+|------------------------------|-----------------------------|-----------------|
+| Liability Waiver             | `liability-waiver.html`     | Yes             |
+| Payment Policy               | `payment-policy.html`       | Yes             |
+| Medical & Emergency Auth     | `medical-authorization.html`| Yes             |
+| Photo & Media Consent        | `photo-consent.html`        | Optional        |
+
+- **Payment:** $80 per family per 8-week session (≈$10/class) via Venmo (@rootsandwingswnc)
+- **Jurisdiction:** North Carolina
+- **Important:** Have the waiver/release language reviewed by a North Carolina attorney before relying on it operationally.
 
 > "Your email is used to send updates via Mailchimp. You can unsubscribe anytime."
 
