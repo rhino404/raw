@@ -230,7 +230,7 @@ img, picture, video, canvas, svg {
   transition: color var(--transition-fast);
 }
 
-.nav-links a:hover {
+.nav-links a:not(.btn):hover {
   color: var(--color-primary);
 }
 
@@ -344,6 +344,19 @@ img, picture, video, canvas, svg {
     width: 24px;
     height: 24px;
     display: block;
+  }
+
+  .nav-register {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-md) 0;
+    border-top: 1px solid var(--color-border);
+    list-style: none;
+  }
+
+  .nav-register .btn {
+    width: 100%;
+    max-width: 250px;
   }
 
   .nav-email {
@@ -697,7 +710,34 @@ img, picture, video, canvas, svg {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.faq-group {
+  display: flex;
+  flex-direction: column;
   gap: var(--space-md);
+}
+
+.faq-group-title {
+  font-family: var(--font-family);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-xs);
+}
+
+.faq-group--featured .faq-group-title {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary-light);
+}
+
+.faq-group--featured .faq-item {
+  border-left: 3px solid var(--color-primary);
 }
 
 .faq-item {

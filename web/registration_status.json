@@ -2,8 +2,8 @@
     "enabled": true,
     "message": "Spring Session — limited spots available!",
     "spots_remaining": null,
-    "cta_text": "Register Now",
-    "cta_url": "https://forms.gle/XASZtrgfo9UsQoGt5",
+    "cta_text": "Secure My Spot",
+    "cta_url": "https://docs.google.com/forms/d/1t1JDsPCcCqkzhHYkcG2WO82APsgjfCR-HAG7CGF20ys/",
     "start": "2026-02-01T00:00:00-05:00",
     "end": "2026-03-24T23:59:59-04:00"
 }
