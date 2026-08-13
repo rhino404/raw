@@ -133,7 +133,7 @@ Registration is handled through a Google Form. During registration, parents/guar
 | Medical & Emergency Auth     | `medical-authorization.html`| Yes             |
 | Photo & Media Consent        | `photo-consent.html`        | Optional        |
 
-- **Payment:** $80 per family per 8-week session (≈$10/class) via Venmo (@rootsandwingswnc)
+- **Payment:** $60 per family per 6-week session (≈$10/class) via Venmo (@rootsandwingswnc)
 - **Jurisdiction:** North Carolina
 - **Important:** Have the waiver/release language reviewed by a North Carolina attorney before relying on it operationally.
 
