@@ -2,30 +2,39 @@
     "hero_banners": [
         {
             "id": 1,
-            "title": "Spring Session",
-            "subtitle": "Begins March 25th",
+            "title": "Winter Session",
+            "subtitle": "January 22nd &ndash; February 26th",
             "cta_text": "Secure My Spot",
             "cta_url": "https://docs.google.com/forms/d/1t1JDsPCcCqkzhHYkcG2WO82APsgjfCR-HAG7CGF20ys/",
-            "launch_date": "2026-01-01",
-            "end_launch_date": "2026-03-24"
+            "launch_date": "2026-10-23",
+            "end_launch_date": "2027-01-21"
         },
         {
             "id": 2,
-            "title": "Summer Session",
-            "subtitle": "Begins July 15th",
+            "title": "Spring Session",
+            "subtitle": "March 26th &ndash; April 30th",
             "cta_text": "Secure My Spot",
             "cta_url": "https://docs.google.com/forms/d/1t1JDsPCcCqkzhHYkcG2WO82APsgjfCR-HAG7CGF20ys/",
-            "launch_date": "2026-05-01",
-            "end_launch_date": "2026-07-14"
+            "launch_date": "2027-01-22",
+            "end_launch_date": "2027-03-25"
         },
         {
             "id": 3,
-            "title": "Fall Session",
-            "subtitle": "Begins October 23rd",
+            "title": "Summer Session",
+            "subtitle": "July 30th &ndash; September 3rd",
             "cta_text": "Secure My Spot",
             "cta_url": "https://docs.google.com/forms/d/1t1JDsPCcCqkzhHYkcG2WO82APsgjfCR-HAG7CGF20ys/",
-            "launch_date": "2026-08-01",
-            "end_launch_date": "2026-10-22"
+            "launch_date": "2027-03-26",
+            "end_launch_date": "2027-07-29"
+        },
+        {
+            "id": 4,
+            "title": "Fall Session",
+            "subtitle": "September 24th &ndash; October 29th",
+            "cta_text": "Secure My Spot",
+            "cta_url": "https://docs.google.com/forms/d/1t1JDsPCcCqkzhHYkcG2WO82APsgjfCR-HAG7CGF20ys/",
+            "launch_date": "2027-07-30",
+            "end_launch_date": "2027-09-23"
         }
     ]
 }

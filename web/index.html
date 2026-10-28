@@ -517,11 +517,13 @@
                 // Apply seasonal texture class
                 if (heroSection) {
                     // Remove any existing seasonal classes
-                    heroSection.classList.remove('hero-spring', 'hero-summer', 'hero-fall');
+                    heroSection.classList.remove('hero-winter', 'hero-spring', 'hero-summer', 'hero-fall');
                     
                     // Add seasonal class based on banner title
                     const season = activeBanner.title.toLowerCase();
-                    if (season.includes('spring')) {
+                    if (season.includes('winter')) {
+                        heroSection.classList.add('hero-winter');
+                    } else if (season.includes('spring')) {
                         heroSection.classList.add('hero-spring');
                     } else if (season.includes('summer')) {
                         heroSection.classList.add('hero-summer');
